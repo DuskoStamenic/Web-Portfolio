@@ -1,0 +1,138 @@
+/*Resetovanje margine i padinga*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Uredjivanje navigacije sajta i pozicioniranje logoa*/
+
+.navigation {
+	margin-top: 10px;
+	/*background-image: linear-gradient(to top right, #1c2d49, #040b16);*/  /*Ovo mi je bil gradient pozadina*/
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.navigation img {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 30px;
+}
+
+.navigation nav {
+	float: right;
+	margin-right: 60px;
+	margin-top: 25px;
+}
+	
+.navigation li {
+	font-family: Roboto Slab;
+	list-style: none;
+	letter-spacing: .1em;
+	color: #ffe45b;
+	display: inline;
+	padding: 15px; 
+	font-size: 16px;
+	margin-left: 15px;
+}
+
+.navigation li:hover {
+	border-bottom: 2px solid #f4cf13;
+	color: #f4cf13;
+}
+
+/*Ovim sam ocistio float iz navigacije i pozicionirao sve na pocetak*/
+
+.navigation:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Uredjivnje banner fotografije i velikog naslova*/
+
+header img {
+	position: relative;
+	height: 650px;
+	overflow: hidden;
+}
+
+header h1 {
+	position: absolute;
+	margin: 0;
+	font-size: 60px;
+	font-family: roboto slab;
+	letter-spacing: .1em;
+	top: 290px;
+	width: 100%;
+	text-align: center;
+	color: #f4cf13;
+	/*background: -webkit-linear-gradient(#f4d142, #ed6c09);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/		 /*ovako sam bio postavio gradient na slova*/
+ }
+
+header p {
+	position: absolute;
+	top: 370px;
+	font-family: roboto slab;
+	letter-spacing: .1em;
+	width: 100%;
+	text-align: center;
+	color: #ffe45b;
+}
+
+section {
+	background-color: #181818;
+	color: white;
+	height: 650px;
+}
+
+section h1 {
+	padding-top: 120px; 
+	padding-bottom: 90px;
+	padding-left: 140px;
+	padding-right: 200px;
+	font-size: 40px;
+	font-family: roboto slab;
+	text-align: center;
+}
+
+section p {
+	
+	padding-left: 140px;
+	padding-right: 200px;
+	font-family: Lato;
+	column-count: 2;
+	column-gap: 50px;
+}
+
+/*Aside bar for social icons*/
+aside {
+	float: right;
+	position: fixed;
+	top: 380px;
+	right: 0px;
+	z-index: 1;
+}
+
+aside li {
+	color: #ffe45b;
+	margin-right: 25px;
+	padding: 15px;
+	font-size: 30px;
+	list-style-type: none;
+	text-align: center;
+}
+
+aside li:hover{
+	border-bottom: 1px solid white;
+	border-radius: 50%;
+}
+
+
+aside i {
+	color: #44187a;
+}
