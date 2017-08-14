@@ -113,7 +113,7 @@ section p {
 aside {
 	float: right;
 	position: fixed;
-	top: 380px;
+	top: 350px;
 	right: 0px;
 	z-index: 1;
 }
@@ -122,7 +122,7 @@ aside li {
 	color: #ffe45b;
 	margin-right: 25px;
 	padding: 15px;
-	font-size: 30px;
+	font-size: 22px;
 	list-style-type: none;
 	text-align: center;
 }
@@ -136,3 +136,50 @@ aside li:hover{
 aside i {
 	color: #44187a;
 }
+
+
+/*Uredjivanje porfolia*/
+
+.wrapper {
+	margin-left: 120px;
+	background-color: white;
+	margin-bottom: 80px;
+}
+
+.wrapper img {
+	margin-top: 85px;
+	margin-right: 60px; 
+	width: 200px;
+	height: 200px;
+	border: 2px solid #44187a; 
+	border-radius: 10px;
+}
+
+.wrapper img:hover {
+	border: 2px solid #ffe45b; 
+}
+
+/*Uredjivanje footera i kontakt obrasca*/
+
+footer {
+	background-color: #181818;
+	height: 650px;
+}
+
+footer p {
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 38px;
+	letter-spacing: .1em;
+	padding-top: 160px;
+	color: white;
+	font-family: roboto slab;
+}
+
