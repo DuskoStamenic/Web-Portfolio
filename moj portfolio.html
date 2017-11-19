@@ -8,6 +8,15 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 </head>
+
+<!-- 
+
+male cake za Emmet u ST3: "selektujem pa ctrl+/" je za precica komentarisanje
+ctrl+alt+j za automatsko pronalaznje closing tag-a 
+Emmet Cheat Sheet sa svim precicama: https://docs.emmet.io/cheat-sheet/
+ --> 
+
+
 <body>
 <div id="homepage">
 	<div class="navigation">
@@ -81,7 +90,18 @@
 
 	<script>
 
-$( " header p" ).hide().delay(1200).fadeIn( 600 );
+$( " header > p" ).hide().delay(1200).fadeIn( 600 );
+
+
+$( "#contact h3" ).hover(function() {
+  $( "#contact h3" ).animate({
+    opacity: 0.15,
+    height: "easeOutBounce"
+
+  }, 1000, function() {
+    // Animation complete.
+  });
+});
 
 
 </script>
